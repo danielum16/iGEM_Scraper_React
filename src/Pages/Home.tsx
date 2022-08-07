@@ -21,7 +21,7 @@ function Home() {
 
     const [data, setData] = useState([])
 
-    api_url = 'http://127.0.0.1:8000/'
+    const api_url = "http://127.0.0.1:8000/"
     // const base_url = process.env.API_URL + "api?search_input="
     const base_url = api_url + "api?search_input="
 
