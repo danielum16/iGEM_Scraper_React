@@ -20,8 +20,12 @@ function Home() {
     const [text, setText] = useState<string>("")
 
     const [data, setData] = useState([])
-
-    const api_url = "http://127.0.0.1:8000/"
+    const api_url = process.env.REACT_APP_APIURL ?? "http://127.0.0.1:8000/"
+    // let api_url = "http://127.0.0.1:8000/"
+    // if (process.env.REACT_APP_APIURL) {
+    //     api_url = process.env.REACT_APP_APIURL
+    // }
+    // const api_url = "http://127.0.0.1:8000/"
     // const base_url = process.env.API_URL + "api?search_input="
     const base_url = api_url + "api?search_input="
 
